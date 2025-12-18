@@ -1,0 +1,6 @@
+[flyway]
+url = "jdbc:sqlserver://localhost:3306/FlywayDemo;Integrated Security=True;"
+schema = "dbo"
+
+[flyway.locations]
+locations = ["filesystem:dbo.sql/migrations", "classpath:db/migrations"]
