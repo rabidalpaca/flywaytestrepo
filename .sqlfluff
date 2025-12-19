@@ -1,0 +1,6 @@
+[sqlfluff]
+dialect = tsql
+templater = raw
+exclude_rules =L009,L010 
+
+[sqlfluff:rules]
