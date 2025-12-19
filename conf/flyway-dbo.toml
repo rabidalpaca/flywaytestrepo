@@ -5,4 +5,4 @@ user = "flyway_user"
 password = "StrongPassword!"
 
 [flyway]
-locations = ["filesystem:dbo.sql/migrations", "classpath:db/migrations"]
+locations = ["filesystem:./dbo-sql", "classpath:db/migrations"]
