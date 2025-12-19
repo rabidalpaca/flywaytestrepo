@@ -1,6 +1,8 @@
-[flyway]
-url = "jdbc:sqlserver://localhost:3306/FlywayDemo;Integrated Security=True;"
+[environments.default]
+url = "jdbc:sqlserver://localhost;databasename=FlywayDemo;encrypt=false"
 schema = "dbo"
+user = "flyway_user"
+password = "StrongPassword!"
 
-[flyway.locations]
+[flyway]
 locations = ["filesystem:dbo.sql/migrations", "classpath:db/migrations"]
